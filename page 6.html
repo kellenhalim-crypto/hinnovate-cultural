@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Culture Goes Viral // Issue 04</title>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    color: #172554;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.editorial-container {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #172554;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.issue-badge {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #2563eb;
+    padding-bottom: 5px;
+}
+
+.main-title {
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    color: #172554;
+    white-space: nowrap;
+}
+
+.editorial-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.statement-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.concept-group {
+    border-left: 3px solid #2563eb;
+    padding-left: 20px;
+}
+
+.concept-title {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.concept-body {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+.visual-column {
+    width: 100%;
+}
+
+.big-photo-frame {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(23, 37, 84, 0.1);
+    background-color: #fff;
+}
+
+.big-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.big-photo-frame:hover img {
+    transform: scale(1.03);
+}
+
+.full-width-footer {
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px dashed #93c5fd;
+    padding-top: 25px;
+}
+
+.floating-quote {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    color: #2563eb;
+}
+
+/* Responsive untuk Handphone */
+@media (max-width: 768px) {
+    .header-block { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .main-title { font-size: 32px; white-space: normal; }
+    .editorial-grid { grid-template-columns: 1fr; gap: 30px; }
+    .big-photo-frame { height: 280px; }
+    body { padding: 30px 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="editorial-container">
+
+    <header class="header-block">
+        <h1 class="main-title">Culture Goes Viral</h1>
+        <div class="issue-badge">PAGE 06</div>
+    </header>
+	<p>Culture plays an important role in shaping viral trends. Through social media, cultural elements such as traditional food, music, fashion, and language can reach people across the world. At the same time, viral trends can introduce teenagers to cultures they might never have experienced before.</p>
+	<br>
+
+    <main class="editorial-grid">
+        
+        <div class="statement-column">
+            
+            <div class="concept-group">
+                <div class="concept-title"> Culture Inspires Trends </div>
+                <div class="concept-body">
+                   Cultural traditions, food, music, fashion, and language can become the inspiration behind viral trends. People share these cultural elements online, allowing others to discover and recreate them.
+				   
+					</div>
+            </div>
+
+            <div class="concept-group">
+                <div class="concept-title"> Trends Spread Culture</div>
+                <div class="concept-body">
+                   Social media helps cultural elements travel beyond their countries of origin. As teenagers participate in viral trends, they can introduce others to traditions, customs, and lifestyles from different cultures. 
+				   </div>
+            </div>
+
+            <div class="concept-group">
+                <div class="concept-title">Culture Evolves Through Trends</div>
+                <div class="concept-body">
+                    When cultural elements become popular online, people sometimes adapt them into modern styles or combine them with influences from other cultures. This creates new ways for younger generations to express and experience culture.
+					</div>
+            </div>
+
+        </div>
+
+        <div class="visual-column">
+            <div class="big-photo-frame">
+                <img src="jj.jfif" alt="Viral Culture Content">
+				<br>
+				<p> Makeup Culture Trend</p>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="full-width-footer">
+        <div class="floating-quote">
+            "Culture gives trends their meaning, while trends give culture new ways to reach the world."
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

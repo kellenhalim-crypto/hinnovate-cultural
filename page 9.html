@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beyond the Viral Moment</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f9ff;
+    color: #142e4c;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+    background:
+    linear-gradient(rgba(5,35,70,0.55), rgba(5,35,70,0.65)),
+    url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero p {
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 75px);
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+.hero h3 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #dceeff;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 85px 9%;
+}
+
+.section-label {
+    color: #398acb;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* BIGGER PICTURE */
+
+.bigger-picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.bigger-picture p,
+.message p {
+    color: #647b94;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.bigger-picture img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* IMAGE GALLERY */
+
+.gallery {
+    background: #e7f2ff;
+    text-align: center;
+}
+
+.gallery-intro {
+    color: #647b94;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.gallery-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(30,80,130,0.08);
+    transition: 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-7px);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.gallery-card div {
+    padding: 22px;
+}
+
+.gallery-card h3 {
+    margin-bottom: 12px;
+    color: #1c4770;
+}
+
+.gallery-card p {
+    color: #71859b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* FINAL MESSAGE */
+
+.message {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.message img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* CLOSING */
+
+.closing {
+    background: #1c568c;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.closing p {
+    color: #b9dcff;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.closing h2 {
+    font-size: clamp(30px, 5vw, 55px);
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.4;
+}
+
+.closing h3 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #d9eaff;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #7890a9;
+    font-size: 12px;
+}
+
+/* SIMPLE SCROLL ANIMATION */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width: 750px) {
+    .bigger-picture,
+    .message {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+
+    h2 {
+        font-size: 29px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero">
+    <p>HINNOVATE • OUR CONCLUSION</p>
+    <h1>BEYOND THE VIRAL MOMENT</h1>
+    <h3>Understanding the influence of trends on a generation.</h3>
+</header>
+
+
+<!-- 1. THE BIGGER PICTURE -->
+<section class="bigger-picture reveal">
+
+    <div>
+        <p class="section-label">01 — THE BIGGER PICTURE</p>
+
+        <h2>More Than Just Trends</h2>
+
+        <p>
+            Viral trends are more than just popular videos, challenges,
+            or online activities. They reflect how teenagers communicate,
+            express themselves, discover new interests, and connect with
+            different cultures.
+            <br><br>
+            Social media allows trends to spread quickly, influencing
+            the way teenagers think, behave, and interact with the world
+            around them.
+        </p>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900"
+    alt="Friends spending time together">
+
+</section>
+
+
+<!-- 2. WHAT HAVE WE LEARNED -->
+<section class="gallery">
+
+    <p class="section-label">02 — WHAT HAVE WE LEARNED?</p>
+
+    <h2>Understanding the Influence</h2>
+
+    <p class="gallery-intro">
+        Through our research, we discovered how social media,
+        teenagers, and culture are connected through viral trends.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card reveal">
+            <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800"
+            alt="Social media">
+
+            <div>
+                <h3>Social Media</h3>
+                <p>
+                    Social media helps trends reach millions of people
+                    and become popular within a short time.
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery-card reveal">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800"
+            alt="Teenagers and friendships">
+
+            <div>
+                <h3>Teenagers</h3>
+                <p>
+                    Teenagers participate in trends to have fun,
+                    express themselves, and feel connected to others.
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery-card reveal">
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800"
+            alt="Cultural event">
+
+            <div>
+                <h3>Culture</h3>
+                <p>
+                    Music, fashion, food, and traditions influence
+                    trends and allow different cultures to be shared.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- 3. OUR FINAL MESSAGE -->
+<section class="message reveal">
+
+    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=900"
+    alt="Friends connecting">
+
+    <div>
+        <p class="section-label">03 — OUR FINAL MESSAGE</p>
+
+        <h2>Enjoy Trends, Make Your Own Choices</h2>
+
+        <p>
+            Following trends isn't necessarily a bad thing.
+            What matters is understanding why we follow them
+            and recognising their influence on our decisions.
+            <br><br>
+            We should be able to enjoy trends, explore new
+            experiences, and appreciate different cultures
+            without feeling pressured to follow everything
+            that becomes popular.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- FINAL STATEMENT -->
+<section class="closing reveal">
+
+    <p>THE MESSAGE TO TAKE AWAY</p>
+
+    <h2>
+        "Don't just follow the trend.
+        Understand the influence behind it."
+    </h2>
+
+    <h3>
+        Be inspired by trends, connected through culture,<br>
+        but never lose your individuality.
+    </h3>
+
+</section>
+
+
+<footer>
+    HINNOVATE © 2026 | BEYOND THE VIRAL MOMENT
+</footer>
+
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+
+    });
+
+}, { threshold: 0.15 });
+
+document.querySelectorAll(".reveal").forEach(element => {
+    observer.observe(element);
+});
+</script>
+
+</body>
+</html>
